@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+</head>
+<body>
+    <h1>Welcome to <%=userInfo.name%></h1>
+    <h2>List of languages are:</h2>
+    <ul>
+         <%userInfo.lang.forEach(item=>{%>
+          <li><%=item%></li>
+         <%})%>
+    </ul>
+</body>
+</html>
